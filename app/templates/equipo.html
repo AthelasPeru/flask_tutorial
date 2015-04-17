@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Equipo</title>
+</head>
+<body>
+	<h1>AThelas Perú</h1>
+	<ul>
+	{% for member in team %}
+		{% if member == "Polo" %}
+			<li>Gay</li>
+
+		{% else %}
+			<li>{{member}}</li>
+		{% endif %}
+		
+	
+	{% endfor %}
+	</ul>
+</body>
+</html>
