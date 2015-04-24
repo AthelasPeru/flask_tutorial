@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="{{url_for('static'), filename='css/style.css'}}">
-	<title>Mi prueba de flask</title>
-</head>
-<body>
-<ul>
-	<li><a href="{{url_for('codepit')}}">Codepit</a></li>
-	<li><a href="{{url_for('index')}}">Home</a></li>
-</ul>
-	<h1>HEllo world, I'm a flask app!!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block head %}
+	<link rel="stylesheet" href="">
+{% endblock %}
+
+
+
+{% block content %}
+	<ul class="lista">
+		<li class="personajes">guerrero1</li>
+		<li class="personajes">guerrero2</li>
+		<li class="personajes">guerrero3</li>
+		<li class="personajes">guerrero4</li>
+		<li class="personajes">guerrero5</li>
+	</ul>
+{% endblock %}
+
+{% block web_title %}
+	Mi index brutalazo
+{% endblock %}
+
+{% block body_tag %}class="body"{% endblock %}
