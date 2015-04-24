@@ -1,23 +1,14 @@
-{% extends "base.html" %}
+{% extends "foundation/base.html" %}
 
-{% block head %}
-	<link rel="stylesheet" href="">
-{% endblock %}
+{% block styles %}
+	{{super()}}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-
+{% endblock styles %}
 
 {% block content %}
-	<ul class="lista">
-		<li class="personajes">guerrero1</li>
-		<li class="personajes">guerrero2</li>
-		<li class="personajes">guerrero3</li>
-		<li class="personajes">guerrero4</li>
-		<li class="personajes">guerrero5</li>
-	</ul>
-{% endblock %}
+	<p>Index</p>
+	{% block slam %}
 
-{% block web_title %}
-	Mi index brutalazo
+	{% endblock %}
 {% endblock %}
-
-{% block body_tag %}class="body"{% endblock %}
