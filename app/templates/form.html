@@ -1,5 +1,19 @@
 {% extends "index.html" %}
 
 {% block slam %}
-	<p>test</p>
+	<div class="row">
+		<form action="/form" method="post">
+			{% for error in form.errors %}
+				{{error}}
+			{% endfor %}
+			{{form.name.label}}
+			{{form.name()}}
+			{% for error in form.name.errors %}
+				{{error}}
+				
+			{% endfor %}
+
+			<input type="submit">	
+		</form>
+	</div>
 {% endblock %}

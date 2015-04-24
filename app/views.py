@@ -22,7 +22,7 @@ def slam_form():
 		data = [{key:value} for key, value in request.form]
 		print data
 
-		return redirect(url_for("index"))
+		return redirect(url_for("main.index"))
 	else:
 		return render_template(
 			"form.html",

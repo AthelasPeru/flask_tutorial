@@ -17,8 +17,8 @@ from wtforms.validators import Required, Length
 
 class SlamForm(Form):
 	name = TextField("Dame tu Nombre", validators=[Required()])
-	edad = IntegerField("Cuantos años tienes?", validators=[Length(2)])
-	fecha = DateField("Que día es hoy?")
+	edad = IntegerField("Cuantos agnos tienes?")
+	fecha = DateField("Que dia es hoy?")
 	email = EmailField("Cual es tu email")
 	historia = TextAreaField("Cuentame algo")
 
